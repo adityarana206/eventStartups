@@ -1,0 +1,108 @@
+.email-form-container {
+    background: #EE1761;
+    display: flex;
+    /* padding: 32px 61px; */
+    align-items: center;
+    width: 100%;
+    /* box-sizing: border-box; */
+    border-radius: 16px;
+}
+
+.email-form {
+    background: #EE1761;
+    display: flex;
+    padding: 32px 61px;
+    align-items: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    /* gap: 60px; */
+}
+
+.email-form-input {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.email-form-label {
+    color: #F6F6F6;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.email-input {
+    display: flex;
+    padding: 8px 23px 8px 16px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    color: #FAFAFA;
+    background: #EE1761;
+    border: 1px solid #FAFAFA;
+}
+
+.email-form-input-error {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email-form-error {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FAFAFA;
+    margin: 0px;
+}
+
+.email-input::placeholder {
+    color: #FAFAFA;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.email-input:focus {
+    outline: none;
+    border: 1px solid #FAFAFA;
+}
+
+.email-input:active {
+    border: 1px solid #FAFAFA;
+    outline: none;
+}
+
+.subscribe-button {
+    background: #EE1761;
+    color: #FAFAFA;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 480px) {
+    .email-form {
+        display: none;
+    }
+
+}

@@ -1,0 +1,362 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 16px 80px;
+  z-index: 1000;
+  position: relative;
+  background-color: #FAFAFA;
+  justify-content: space-between;
+  color: #FAFAFA;
+  box-shadow: 4px 4px 11.4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.desktop-logo img {
+  width: 144px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 40px;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-location {
+  font-size: 12px;
+  font-weight: 500;
+  color: #EE1761;
+  cursor: pointer;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* .input-and-suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.suggestion-popup {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  width: 50%;
+  top: 3.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-box {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion-box li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-box li:hover {
+  background-color: #f5f5f5;
+}
+
+
+/* Mobile Menu Icon */
+/* .mobile-menu-icon {
+  display: block;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+} */
+
+/* Navigation Links */
+.nav-links,
+.nav-links-mobile {
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links.show,
+.nav-links-mobile.show {
+  display: flex;
+  z-index: 5;
+}
+
+.nav-links li,
+.nav-links-mobile li {
+  margin: 0 10px;
+}
+
+.nav-links a,
+.nav-links-mobile a {
+  text-decoration: none;
+  color: white;
+}
+
+/* For Mobile Navigation */
+.nav-links-mobile {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.nav-links-mobile li {
+  margin: 10px 0;
+}
+
+.nav-links-mobile a {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* new css */
+.inputsandlocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60%;
+  gap: 32px;
+}
+
+.searchInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 110px 11px 12px;
+  border-radius: 4px;
+  width: 100%;
+  gap: 1rem;
+  border: 1px solid #E6E6E6;
+}
+
+.searchInput:hover {
+  border: 1px solid #969696;
+}
+
+.searchInput:focus {
+  border: 1px solid #EE1761;
+}
+
+.searchInputDisable {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 110px 11px 12px;
+  border-radius: 4px;
+  width: 50%;
+  gap: 1rem;
+  border: 1px solid #E6E6E6;
+}
+
+.searchInputDisable:hover {
+  border: 1px solid #E6E6E6;
+}
+
+.sInput {
+  border: none;
+  width: 100%;
+  background-color: #FAFAFA;
+}
+
+.sInput::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'inter';
+  color: #6E6E6E;
+}
+
+.sInput:hover,
+.sInput:focus {
+  outline: none;
+  border: none;
+  /* Change border color on hover and focus */
+}
+
+.sInput:disabled::placeholder {
+  color: #969696;
+}
+
+.Location-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 4px;
+  /* padding: 8px 14px; */
+  gap: 10px;
+}
+
+.Location-box:focus {
+  border: 1px solid #323232;
+}
+
+.news-button {
+  background-color: #EE1761;
+  padding: 6px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.news-button:hover {
+  background-color: #EE1761;
+}
+
+.news-button:focus {
+  border: 1px solid #323232;
+}
+
+.news-button::after {
+  background-color: #D21153;
+}
+
+.Nbutton {
+  background-color: #EE1761;
+  border: none;
+  color: #FAFAFA;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'inter';
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.desktop-logo {
+  display: block;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+}
+
+.dropdown-icon {
+  width: 16px;
+}
+
+.location-explore-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.downarrow {
+  width: 16px;
+}
+
+@media screen and (max-width: 480px) {
+
+  /* .desktop-logo img {
+    width: 144px;
+  } */
+  .navbar {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .Location-box {
+    padding: 4px 8px;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .news-button {
+    display: flex;
+    white-space: nowrap;
+    padding: 5px 8px;
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .Nbutton {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .inputsandlocation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 34%;
+    gap: 32px;
+  }
+
+  .downarrow {
+    width: 12px;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .dropdown-icon {
+    width: 12px;
+  }
+
+  .searchInputDisable {
+    display: none;
+  }
+
+  .navbar-location {
+    font-size: 12px;
+    color: #EE1761;
+    outline: none;
+  }
+
+  .navbar-location:focus,
+  .navbar-location:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .searchInput {
+    display: none;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+  }
+
+  .location-icon {
+    height: 16px;
+    width: 13px;
+  }
+}

@@ -1,0 +1,559 @@
+.event-poster {
+    font-family: 'inter';
+    padding: 72px 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+}
+
+.header-container {
+    width: 70%;
+
+}
+
+.events-datails {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    font-size: 24px;
+    font-weight: 700;
+    color: #323232;
+    width: 4.6rem;
+    padding-top: 20px;
+    margin: 0px;
+    border-bottom: 3px solid #323232;
+}
+
+.about-container {
+    width: 95%;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+/* .header-image {
+    display: flex;
+}
+
+.header-image img {
+    width: 730px;
+    height: 411px;
+    object-fit: cover;
+    border-radius: 8px;
+} */
+
+.header-image {
+    position: relative;
+    /* Set relative position for the container */
+    display: inline-block;
+    /* Optional: ensures it's inline with other content */
+    width: 730px;
+    height: 411px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.header-image img+img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-discription {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6E6E6E;
+    width: 95%;
+    margin: 0px;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.about-discription {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.events-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.city-link {
+    color: inherit;
+}
+
+.city-link:hover {
+    color: #EE1761;
+}
+
+.detail {
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.event-subdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+}
+
+.event-details {
+    border: 1px solid #C6C6C6;
+    border-radius: 8px;
+    padding: 20px 12px;
+    align-items: flex-start;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #323232;
+    margin: 0px;
+    display: flex;
+    font-family: 'inter';
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.detail {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.location-detail {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.ticket-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+/*  tickets css */
+/* App.css */
+
+/* body {
+    background-color: #FAFAFA;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  } */
+
+.ticket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FAFAFA;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.ticket-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.ticket-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 8px 12px 8px 12px;
+    width: 94%;
+    border-bottom: 2px solid #dedbdb;
+    color: #464646;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+    color: #464646;
+    gap: 6px;
+}
+
+.all-tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+
+.ticket {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 12px 16px 12px;
+    align-items: flex-start;
+    width: 94%;
+    display: flex;
+    color: #323232;
+    font-family: 'inter';
+    margin: 0px;
+}
+
+.total-quantity {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ticket-option span {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.ticket-option .price {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #464646;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 12px;
+    font-size: 1.1em;
+    width: 95%;
+}
+
+.buy-now {
+    display: flex;
+    padding: 11px 41px 10px 41px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #EE1761;
+    color: #FAFAFA;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: #D21153;
+}
+
+.buy-now:focus {
+    border: #323232;
+    background-color: #EE1761;
+}
+
+.buy-now:disabled {
+    opacity: 0.5;
+    background-color: #EE1761;
+}
+
+
+/*  for add button */
+/* AddButton.css */
+
+.add-button {
+    padding: 6px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #f0f0f0;
+}
+
+.add-button-group {
+    display: flex;
+    align-items: center;
+}
+
+.add-button-decrement,
+.add-button-increment {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    background: #E60073;
+    color: white;
+}
+
+.add-button-decrement {
+    border-radius: 5px 0 0 5px;
+}
+
+.add-button-increment {
+    border-radius: 0 5px 5px 0;
+}
+
+.add-button-count {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: default;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    background: #E60073;
+    color: white;
+}
+
+/* organisation */
+.organiser-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FAFAFA;
+    border: 1px solid #C6C6C6;
+    border-radius: 8px;
+    padding: 20px 12px;
+    gap: 20px;
+}
+
+.organisation-subdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.organisation-text {
+    font-size: 24px;
+    font-weight: bold;
+    align-items: flex-start;
+    width: 94%;
+    display: flex;
+    color: #323232;
+    font-family: 'inter';
+    margin: 0px;
+}
+
+.organisation-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.organisation-image img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.organisation-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #464646;
+    margin-top: 2px;
+    font-family: 'inter';
+    text-wrap: wrap;
+}
+
+.organisation-contact {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.organisation-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 0.4rem;
+    color: #464646;
+}
+
+.organisation-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 0.4rem;
+    color: #464646;
+}
+
+.organisation-socialmedia {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 500;
+    color: #464646;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.socialmedia-icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'inter';
+    align-items: center;
+    gap: 8px;
+    margin: 0px;
+}
+
+/* for similar component */
+/* src/components/SimilarEvents.css */
+/* src/components/SimilarEvents.css */
+.similar-events {
+    margin: 20px 0;
+}
+
+.similar-events-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.similar-events {
+    font-size: 24px;
+    margin-top: 80px;
+}
+
+.events-grid {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    /* Adjust as needed */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    gap: 40px;
+}
+
+/* Hide the scrollbar */
+.events-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* .events-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
+
+@media screen and (max-width: 480px) {
+    .event-poster {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: #FAFAFA;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .events-datails {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .about-container {
+        width: 99%;
+        border-bottom: 1px solid #C6C6C6;
+    }
+
+    .event-discription {
+        width: 99%;
+        font-size: 12px;
+    }
+
+    .events-container {
+        width: 100%;
+    }
+
+    .event-heading {
+        font-size: 20px;
+    }
+
+    .detail {
+        font-size: 12px;
+    }
+
+    .location-detail {
+        font-size: 12px;
+    }
+
+    .ticket {
+        font-size: 20px;
+    }
+
+    .header-image {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 219px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

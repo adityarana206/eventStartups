@@ -1,0 +1,532 @@
+.attendee-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBFBFB;
+    padding: 72px 272px;
+    font-family: 'inter';
+}
+
+.priceandtype {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 28px;
+    font-family: 'inter';
+}
+
+/*  */
+.priceandtype {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6E6;
+    width: 100%;
+}
+
+.quantity-details {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.tickettype {
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+.ticketprice {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    min-width: 80px;
+}
+
+/*  */
+
+.priceandtax {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    border-bottom: 1px solid #E6E6E6;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.success-message {
+    color: green;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'inter';
+    display: flex;
+    margin: 0px;
+}
+
+.tickets-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addmorecontainer {
+    width: 100%;
+    padding-top: 16px;
+    cursor: pointer;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: red;
+    /* Optional: You can change the color for emphasis */
+}
+
+.quantity-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    max-width: 150px;
+}
+
+.tickettype,
+.ticketprice {
+    flex-grow: 1;
+    text-align: left;
+    /* or right, depending on the alignment you want */
+}
+
+.addmore {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+.addmoretext {
+    font-size: 14px;
+    font-weight: 500;
+    color: #323232;
+    font-family: 'inter';
+}
+
+.ticketprice {
+    font-size: 20px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.tickettype {
+    font-size: 12px;
+    font-weight: 500;
+    color: #464646;
+}
+
+.priceandtotal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 40%;
+}
+
+.includeTax {
+    font-size: 10px;
+    font-weight: 300;
+    color: #969696;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ticketPrice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ticketprice-tax {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: end;
+}
+
+.priceandaddmore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+    padding: 16px 25px;
+}
+
+.coupeninputandcode {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+}
+
+.coupon-container {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #C6C6C6;
+    padding: 8px 0px 8px 20px;
+    border-radius: 8px;
+}
+
+.apply-button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+    cursor: pointer;
+    padding: 2px 13px 3px;
+}
+
+.error-message {
+    color: #EE173E;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'inter';
+    display: flex;
+    margin: 0px;
+}
+
+.code-input {
+    border: none;
+    width: 100%;
+}
+
+.code-input:hover,
+.code-input:focus {
+    border: none;
+    outline: none;
+}
+
+.text-tickets {
+    font-size: 20px;
+    font-weight: 700;
+    color: #323232;
+    margin: 0px;
+    align-items: baseline;
+    width: 100%;
+}
+
+.question-forcode {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.attendee-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.payment-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.payment-small-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.sava-button-submit-order {
+    width: 100%;
+    height: 2.5rem;
+    border: 0px;
+    background-color: #EE1761;
+    color: white;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+.sava-button-submit-order:hover {
+    border-radius: 8px;
+    background: #D21153;
+    cursor: pointer;
+}
+
+.payment-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #323232;
+    margin: 0px;
+}
+
+.totalprice {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px;
+    color: #464646;
+    width: 100%;
+    padding: 8px 0px;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+}
+
+.total-price-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.total-price-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.payment-subdetails {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amont-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #464646;
+}
+
+.amount-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6E6E6E;
+}
+
+.text-input {
+    border: 1px solid #E6E6E6;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.text-input.has-text {
+    padding: 10px;
+    /* Increased padding */
+}
+
+.text {
+    width: 95%;
+    border: none;
+    height: 37px;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+.text:hover,
+.text:focus {
+    outline: none;
+    border: none;
+    /* Change border color on hover and focus */
+}
+
+.text-input::placeholder {
+    padding-left: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-text-box {
+    border: 1px solid #E6E6E6;
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.input-text-box:focus {
+    border: 1px solid #EE1761;
+}
+
+.input-text-box:hover {
+    border: 1px solid #323232;
+}
+
+.email-input-error {
+    width: 100%;
+}
+
+.email-error-message {
+    color: #EE173E;
+    font-family: 'inter';
+    display: flex;
+    margin: 0px;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-left: 20px;
+}
+
+.option {
+    padding-left: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6E6E6E;
+}
+
+.option::placeholder {
+    padding-left: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6E6E6E;
+}
+
+.emailTicketType {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.sava-button {
+    width: 100%;
+    height: 2.5rem;
+    border: 0px;
+    background-color: #EE1761;
+    color: white;
+    border-radius: 9px;
+}
+
+.sava-button:hover {
+    border-radius: 8px;
+    background: #D21153;
+    cursor: pointer;
+}
+
+.sava-button:disabled {
+    border-radius: 8px;
+    opacity: 0.5;
+    background: #EE1761;
+    cursor: not-allowed;
+}
+
+.sava-button-submit {
+    width: 100%;
+    height: 2.5rem;
+    border: 0px;
+    background-color: #EE1761;
+    color: white;
+    border-radius: 9px;
+}
+
+.sava-button-submit:hover {
+    border-radius: 8px;
+    background: #D21153;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .attendee-form {
+        padding: 20px 20px;
+    }
+
+    .emailTicketType {
+        flex-direction: column;
+    }
+
+    .addmore {
+        width: 90%;
+    }
+
+    .coupon-container {
+        width: 94%;
+    }
+
+    .tickettype {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .ticketprice {
+        font-size: 16px;
+    }
+
+    .ticketPrice {
+        gap: 0.3rem;
+    }
+
+    .ticketprice-tax {
+        display: block;
+    }
+
+    .addmoretext {
+        font-size: 12px;
+    }
+
+    .question-forcode {
+        font-size: 12px;
+    }
+
+    .apply-button {
+        font-size: 12px;
+    }
+
+    .payment-text {
+        font-size: 16px;
+    }
+
+    .amont-value {
+        font-size: 16px;
+    }
+
+    .total-price-text {
+        font-size: 16px;
+    }
+
+    .total-price-value {
+        font-size: 16px;
+    }
+
+    .priceandtype {
+        gap: 15px;
+    }
+
+    .priceandaddmore {
+        padding: 16px;
+    }
+}

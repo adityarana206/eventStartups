@@ -1,0 +1,181 @@
+.event-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 72px 80px;
+}
+
+.events-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.show-event-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.filter-container-event {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.filter-button-event {
+    padding: 8px 9px;
+    border: 1px solid #323232;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'inter';
+    color: #323232;
+    /* transition: background-color 0.3s, color 0.3s; */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.filter-button-event:hover {
+    background-color: #E6E6E6;
+    color: #323232;
+}
+
+.industry-filter-button-event {
+    padding: 8px 9px;
+    border: 1px solid #323232;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'inter';
+    color: #323232;
+    /* transition: background-color 0.3s, color 0.3s; */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.industry-filter-button-event:hover {
+    background-color: #E6E6E6;
+    color: #323232;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.date-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-left: 25px;
+}
+
+/* industry */
+.industry-filter-container-event {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 22px;
+    width: 100%;
+    gap: 13px;
+}
+
+.industry-slider-event {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 95%;
+    /* Adjust as needed */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    gap: 12px;
+}
+
+.industry-slider-event::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.to-show-all-events {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'inter';
+    color: #EE1761;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.all-events-card {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* gap: 30px 7px; */
+    gap: 30px calc(4% - 10px);
+}
+
+.filter-button-event.active,
+.industry-filter-button-event.active {
+    background-color: #EE1761;
+    /* Or any color you prefer */
+    color: white;
+    border: #EE1761;
+    /* Change text color if needed */
+}
+
+@media screen and (max-width: 480px) {
+    .event-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px 20px;
+    }
+
+    .date-filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 25px;
+
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        width: 95%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        gap: 12px;
+    }
+
+    .filter-button-event {
+        font-size: 12px;
+    }
+
+    .industry-filter-button-event {
+        font-size: 12px;
+    }
+}

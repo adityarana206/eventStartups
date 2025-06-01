@@ -1,0 +1,31 @@
+.custom-slider-container {
+    width: 290px;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image img {
+    width: var(--image-width);
+    height: 156px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.slider-image {
+    width: var(--image-width);
+    height: 156px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .custom-slider-container {
+        display: none;
+    }
+}

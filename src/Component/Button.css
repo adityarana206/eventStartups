@@ -1,0 +1,60 @@
+.add-button {
+    display: flex;
+    padding: 4px 27px 5px 28px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'inter';
+    cursor: pointer;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.add-button:hover {
+    background: #E6E6E6;
+}
+
+.add-button-group {
+    display: flex;
+    align-items: center;
+    padding: 4px 9px 5px 10px;
+    background: #EE1761;
+    border-radius: 4px;
+}
+
+.add-button-decrement,
+.add-button-increment {
+    padding: 0px 8.6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid black;
+    background: #EE1761;
+    color: white;
+}
+
+.add-button-decrement {
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.add-button-increment {
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.add-button-count {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'inter';
+    cursor: default;
+    border: none;
+    border-left: none;
+    border-right: none;
+    background: #EE1761;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #FAFAFA;
+}

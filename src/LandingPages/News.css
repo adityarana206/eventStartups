@@ -1,0 +1,154 @@
+/* News.css */
+.google-ads-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    height: 156px;
+    justify-content: space-between;
+}
+
+.industry-slider-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    gap: 40px;
+}
+
+.industry-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+.industry-slider::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.industry-button {
+    background-color: transparent;
+    border: none;
+    padding: 0px 10px 10px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #969696;
+    text-align: center;
+    font-family: Inter;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.industry-button:hover {
+    color: #464646;
+}
+
+.industry-button:focus {
+    color: #464646;
+}
+
+.industry-button.active {
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #464646;
+    padding: 0px;
+    /* border-bottom: 2px solid #464646;
+    border-radius: 0 0 15px 15px; */
+}
+
+.industry-container-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background-color: #464646;
+    border-radius: 100px 100px 0px 0px;
+    /* Curved effect */
+    position: absolute;
+    bottom: 0px;
+    /* Adjust this value to control the position of the underline */
+}
+
+.slider-arrow {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+.slider-arrow.left {
+    margin-right: 10px;
+}
+
+.slider-arrow.right {
+    margin-left: 10px;
+}
+
+/* Industry News */
+.spcific-industry-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.industry-news-details {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 76%;
+    gap: 48px;
+}
+
+.industry-events {
+    width: 20%;
+    border-radius: 8px;
+    border: 1px solid #C6C6C6;
+    display: flex;
+    padding: 12px 0px 22px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    margin-top: 82px;
+}
+
+.google-ads-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 76%;
+}
+
+@media screen and (max-width: 480px) {
+    .google-ads-slider {
+        display: flex;
+    }
+
+    .industry-events {
+        display: none;
+    }
+
+    .industry-news-details {
+        width: 100%;
+        gap: 23px;
+    }
+
+    .google-ads-section {
+        width: 100%;
+    }
+}
