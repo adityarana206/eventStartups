@@ -1,5 +1,5 @@
-import React from 'react';
-import './NewCard.css'
+import React from "react";
+import "./NewCard.css";
 
 const NewsCardTwo = ({ iconUrl, industry, article, title }) => {
   if (!article) {
@@ -11,12 +11,11 @@ const NewsCardTwo = ({ iconUrl, industry, article, title }) => {
       return title;
     }
     const truncatedTitle = title.slice(0, maxChars);
-    return truncatedTitle + '…';
+    return truncatedTitle + "…";
   }
 
-
   function capitalizeIndustry(industry) {
-    if (!industry) return ''; // Return an empty string if input is empty or undefined
+    if (!industry) return ""; // Return an empty string if input is empty or undefined
 
     // Capitalize the first letter and add the rest of the string
     return industry.charAt(0).toUpperCase() + industry.slice(1).toLowerCase();
@@ -46,7 +45,7 @@ const NewsCardTwo = ({ iconUrl, industry, article, title }) => {
 
   function convertTimeToRelativeTime(dateString) {
     // Parse the date string to a Date object
-    const pastDate = new Date(dateString.replace(/-/g, '/')); // Replace hyphens with slashes for better compatibility
+    const pastDate = new Date(dateString.replace(/-/g, "/")); // Replace hyphens with slashes for better compatibility
 
     // Get the current date and time
     const now = new Date();
@@ -69,27 +68,43 @@ const NewsCardTwo = ({ iconUrl, industry, article, title }) => {
     }
   }
 
-
-
   return (
     <div className="news-card">
-      <div className='news-card-two-image'>
-        <img src={article.imageUrl ? article.imageUrl : ''} alt={article.title} />
+      <div className="news-card-two-image">
+        <img
+          src={article.imageUrl ? article.imageUrl : ""}
+          alt={article.title}
+        />
       </div>
       <div className="news-card-two-content">
-        <div className='news-card-two-subcontain'>
+        <div className="news-card-two-subcontain">
           <p className="news-card-category">{capitalizeIndustry(industry)}</p>
-          <h2 className='news-card-two-title'>{limitTitleCharacters(article.title)}</h2>
+          <h2 className="news-card-two-title">
+            {limitTitleCharacters(article.title)}
+          </h2>
         </div>
         {/* <span><img style={{ height: '10px', width: '12px' }} src={iconUrl ? `https://startupgpt.fyi/${iconUrl.replace(/\\/g, "/").replace("uploads/", "")}` : ''} alt="" /> {title} {article.publishDate ? convertTimeToHours(new Date(article.publishDate).toLocaleTimeString()) : 'No date'}</span> */}
-        <div className='news-card-four-icons'>
-          <div className='news-card-four-icons-name'>
-            <div className='card-three-icon'>
-              <img src={`https://snfyibackend.onrender.com/${iconUrl.replace(/\\/g, "/").replace("uploads/", "")}`} alt="" />
+        <div className="news-card-four-icons">
+          <div className="news-card-four-icons-name">
+            <div className="card-three-icon">
+              <img
+                src={
+                  iconUrl
+                    ? iconUrl.startsWith("http")
+                      ? iconUrl
+                      : `/api/${iconUrl.replace(/\\/g, "/").replace("uploads/", "")}`
+                    : ""
+                }
+                alt=""
+              />
             </div>
-            <span className='news-card-four-source-name' > {title}</span>
+            <span className="news-card-four-source-name"> {title}</span>
           </div>
-          <span className='news-card-four-time' >{article.publishDate ? convertTimeToRelativeTime(article.publishDate) : 'No date'}</span>
+          <span className="news-card-four-time">
+            {article.publishDate
+              ? convertTimeToRelativeTime(article.publishDate)
+              : "No date"}
+          </span>
         </div>
       </div>
     </div>
